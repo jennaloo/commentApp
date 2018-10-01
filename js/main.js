@@ -6,11 +6,13 @@ function comment() {
     var newP2 = document.createElement('p');
     newP2.innerText = "Message: " + message;
     var newDiv = document.createElement("div");
-    newDiv.className = "my-3 mx-auto";
+    newDiv.className = "my-3 mx-auto col-lg-4 col-md-6 col-xs-12"
+    newDiv.style.backgroundClip = "padding-box";
+    newDiv.style.border = "10px solid transparent";
+    newDiv.style.boxSizing = "border-box";
     newDiv.style.height = '300px';
-    newDiv.style.width = "300px";
+    newDiv.style.width = '300px';
     newDiv.style.padding = "30px";
-    newDiv.style.boxShadow = "0px 10px 10px lightgrey"
     newDiv.style.backgroundColor = "#FEFE9C";
 
     if (userName && message !== "") {
