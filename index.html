@@ -34,12 +34,14 @@
         <div id="form-box" class="col-12 text-center mx-auto">
             <h1 id="logo" class="m-2">Leave a Note</h1>
             <label for="input">From:    </label>
-            <input id="input" class="ml-5" type="text">
+            <input id="input" class="ml-5" type="text" maxlength="30">
             <br>
             <label id="comment-label">Message: </label>
-            <textarea id="comment" class="ml-3" type="text"></textarea> <button onclick="comment()" class="m-2 mx-auto" id="enter" class="btn btn-light">Enter</button>
+            <textarea id="comment" class="ml-3" type="text" maxlength="180"></textarea> <button onclick="comment()" class="m-2 mx-auto" id="enter" class="btn btn-light">Enter</button>
         </div>
     </div>
+
+    <button id="button"></button>
 
 </body>
 

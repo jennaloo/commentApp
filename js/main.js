@@ -14,6 +14,9 @@ function comment() {
     newDiv.style.width = '300px';
     newDiv.style.padding = "30px";
     newDiv.style.backgroundColor = "#FEFE9C";
+    newDiv.style.overflowWrap = "break-word"
+
+    var newButton = document.getElementById('button');
 
     if (userName && message !== "") {
         document.getElementById('box').appendChild(newDiv);
