@@ -33,6 +33,7 @@ function comment() {
 
 
 function deleteBtn(someArgument) {
+    console.log(someArgument.parentNode);
     var parent = someArgument.parentNode;
     parent.removeChild(someArgument);
 }
